@@ -1,0 +1,343 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+
+  "QuestionCategories": [
+    {
+      "Category": "Pokémon",
+      "QuestionList": [
+        {
+          "QuestionTxt": "What type(s) does Johto Wooper have?",
+          "Answer": "Ground / Water",
+          "Cost": 100
+        },
+        {
+          "QuestionTxt": "In which geneneration was Dusknoir introduced?",
+          "Answer": "In generation 4.",
+          "Cost": 200
+        },
+        {
+          "QuestionTxt": "Name all of the Sinnoh starters.",
+          "Answer": "Turtwig, Chimchar, Piplup",
+          "Cost": 300
+        },
+        {
+          "QuestionTxt": "Name at least 5 Eevee evolutions",
+          "Answer": "All evolutions: Vaporeon, Jolteon, Flareon, Leafeon, Umbreon, Sylveon, Espeon, Glaceon",
+          "Cost": 400
+        },
+        {
+          "QuestionTxt": "Name all possible Burmy evolution and the conditions to get them",
+          "Answer": "Male Burmy -> Mothim \nFemale Burmy evolves into Wormadam with 3 different cloaks \nPlant Cloak: Last battle in the overworld\nSandy Cloak: Last Battle was in cave or a beach\nTrash Cloak: Last battle was in building",
+          "Cost": 500
+        }
+      ]
+    },
+    {
+      "Category": "Food trivia",
+      "QuestionList": [
+        {
+          "QuestionTxt": "Where were French fries invented?",
+          "Answer": "Belgium",
+          "Cost": 100
+        },
+        {
+          "QuestionTxt": "What is used to make hummus?",
+          "Answer": "Chickpeas",
+          "Cost": 200
+        },
+        {
+          "QuestionTxt": "Which famous soft drink was invented in 1892?",
+          "Answer": "Coca Cola",
+          "Cost": 300
+        },
+        {
+          "QuestionTxt": "What two words were combined to make the word ‘Spam’?",
+          "Answer": "Spiced Ham",
+          "Cost": 400
+        },
+        {
+          "QuestionTxt": "What was the first food eaten in space?",
+          "Answer": "Apple sauce",
+          "Cost": 500
+        }
+      ]
+    },
+    {
+      "Category": "Gaming Trivia",
+      "QuestionList": [
+        {
+          "QuestionTxt": "What was 'Mario' originally know as in 'Donkey Kong'",
+          "Answer": "Jumpman",
+          "Cost": 100
+        },
+        {
+          "QuestionTxt": "From which country is the original developer of Minecraft",
+          "Answer": "Sweden",
+          "Cost": 200
+        },
+        {
+          "QuestionTxt": "What is the full name of 'DotA'",
+          "Answer": "Defense of the Ancients",
+          "Cost": 300
+        },
+        {
+          "QuestionTxt": "What is the agent number given to the main character in 'Hitman'?",
+          "Answer": "47",
+          "Cost": 400
+        },
+        {
+          "QuestionTxt": "Name at least 8 of the available characters in 'Super Smash Bros' on N64?",
+          "Answer": "Captain Falcon, Donkey Kong, Fox, Jigglypuff, Kirby, Link, Luigi, Mario, Ness, Pikachu, Samus, Yoshi",
+          "Cost": 500
+        }
+      ]
+    },
+    {
+      "Category": "Movies",
+      "QuestionList": [
+        {
+          "QuestionTxt": "In The Matrix, what color are the two pills that Morpheus gives Neo to choose between?",
+          "Answer": "Red and blue",
+          "Cost": 100
+        },
+        {
+          "QuestionTxt": "What was 'Scream' originally called?",
+          "Answer": "Scary Movie",
+          "Cost": 200
+        },
+        {
+          "QuestionTxt": "Phil, Stu, and Alan spend all of The Hangover looking for their friend Doug. Where do they eventually find him?",
+          "Answer": "On the roof",
+          "Cost": 300
+        },
+        {
+          "QuestionTxt": "In what movie did Keanu Reeves make his TV debut in 1986?",
+          "Answer": "Youngblood",
+          "Cost": 400
+        },
+        {
+          "QuestionTxt": "What is Lightning McQueen's number in Cars?",
+          "Answer": "95",
+          "Cost": 500
+        }
+      ]
+    },
+    {
+      "Category": "Animals",
+      "QuestionList": [
+        {
+          "QuestionTxt": "What is a group of crows called.",
+          "Answer": "A murder",
+          "Cost": 100
+        },
+        {
+          "QuestionTxt": "What is a female fox called?",
+          "Answer": "Vixen",
+          "Cost": 200
+        },
+        {
+          "QuestionTxt": "What male sea creature gives birth to its young?,",
+          "Answer": "Seahorse",
+          "Cost": 300
+        },
+        {
+          "QuestionTxt": "What are the only two mammals that lay eggs?",
+          "Answer": "Spiny anteater (echidna) and duck-billed platypus",
+          "Cost": 400
+        },
+        {
+          "QuestionTxt": "What animal squirts blood from its eyes as a defensive mechanism?",
+          "Answer": "Horned lizard",
+          "Cost": 500
+        }
+      ]
+    },
+    {
+      "Category": "Name the game from a bad description",
+      "QuestionList": [
+        {
+          "QuestionTxt": "Pink puffball fight a greedy hammer-wielding penguin by eating his enemies and absorbing their powers. He tends to make things worse by accident.",
+          "Answer": "Kirby",
+          "Cost": 100
+        },
+        {
+          "QuestionTxt": "Nerd with thick glasses tries to solve his problems with a crowbar",
+          "Answer": "Half-Life",
+          "Cost": 200
+        },
+        {
+          "QuestionTxt": "A redneck and a snarky girl team up to crush an old woman under a boulder and do jigsaw puzzles. Redneck's sister narrowly escapes transformation into an ogre.",
+          "Answer": "Banjo-Kazooie",
+          "Cost": 300
+        },
+        {
+          "QuestionTxt": "Pirates try to conquer the universe using jellyfish, and the only one who can stop them is an orphaned girl raised by birds.",
+          "Answer": "Metroid",
+          "Cost": 400
+        },
+        {
+          "QuestionTxt": "A strapping young man dresses in leather and enters an old family acquaintance's dungeon to whip him mercilessly.",
+          "Answer": "Castlevania",
+          "Cost": 500
+        }
+      ]
+    },
+    {
+      "Category": "Name the game from a bad description",
+      "QuestionList": [
+        {
+          "QuestionTxt": "A group of people are at the complete mercy of a whimsical and cruel god who alternates between deleting their toilets and trapping them inside the very walls of their own homes.",
+          "Answer": "The Sims",
+          "Cost": 100
+        },
+        {
+          "QuestionTxt": "A boy in a green skirt and tights collects the hearts of his slain enemies, engages in arson, pesters the elderly and blows up endangered dinosaurs.",
+          "Answer": "The Legend of Zelda",
+          "Cost": 200
+        },
+        {
+          "QuestionTxt": "A small blue mammal steals batteries from a fat man.",
+          "Answer": "Sonic",
+          "Cost": 300
+        },
+        {
+          "QuestionTxt": "Cops break into a house and kill everyone inside.",
+          "Answer": "Resident Evil",
+          "Cost": 400
+        },
+        {
+          "QuestionTxt": "Guy named after a penis builds a fortress named after a clitoris and is defeated by a guy named after an erection.",
+          "Answer": "Metal Gear",
+          "Cost": 500
+        }
+      ]
+    },
+    {
+      "Category": "Name the anime from a bad description",
+      "QuestionList": [
+        {
+          "QuestionTxt": "It's totally normal for ninjas to wear brightly colored clothing.",
+          "Answer": "Naruto",
+          "Cost": 100
+        },
+        {
+          "QuestionTxt": "Children put their companions in balls and sometimes take them out and make them fight.",
+          "Answer": "Pokémon",
+          "Cost": 200
+        },
+        {
+          "QuestionTxt": "A dangerous octopus is appeased with a teaching position.",
+          "Answer": "Assassination Classroom",
+          "Cost": 300
+        },
+        {
+          "QuestionTxt": "An alien makes a high school boy do crazy thing with his hand.",
+          "Answer": "Parasyte",
+          "Cost": 400
+        },
+        {
+          "QuestionTxt": "A teddy bear makes hight school students kill each other",
+          "Answer": "Danganronpa",
+          "Cost": 500
+        }
+      ]
+    },
+    {
+      "Category": "Name the movie from a bad description",
+      "QuestionList": [
+        {
+          "QuestionTxt": "An elderly man uses balloons to kidnap a small boy.",
+          "Answer": "Up!",
+          "Cost": 100
+        },
+        {
+          "QuestionTxt": "A man's sense of reality alters after taking a pill.",
+          "Answer": "The Matrix",
+          "Cost": 200
+        },
+        {
+          "QuestionTxt": "A young boy and an old man go to extraordinary lengths to make the boy's parents have sex.",
+          "Answer": "Back to the Future!",
+          "Cost": 300
+        },
+        {
+          "QuestionTxt": "A grown man plays with a toy and sleeps for almost the entire movie.",
+          "Answer": "Inception",
+          "Cost": 400
+        },
+        {
+          "QuestionTxt": "70 years old mass murderer is obssessed with a boy and will do anything to get close to him.",
+          "Answer": "Harry Potter and the Sorcerer's Stone",
+          "Cost": 500
+        }
+      ]
+    },
+    {
+      "Category": "Animals",
+      "QuestionList": [
+        {
+          "QuestionTxt": "Which animal has rectangular pupils?",
+          "Answer": "Goat",
+          "Cost": 100
+        },
+        {
+          "QuestionTxt": "What’s the sole food source for koala bears?",
+          "Answer": "Eucalyptus",
+          "Cost": 200
+        },
+        {
+          "QuestionTxt": "What percentage of their lives do cats spend sleeping?",
+          "Answer": "70 percent",
+          "Cost": 300
+        },
+        {
+          "QuestionTxt": "What color are flamingos when they’re born?",
+          "Answer": "Gray",
+          "Cost": 400
+        },
+        {
+          "QuestionTxt": "What is a group of hedgehogs called?",
+          "Answer": "A prickle or an array.",
+          "Cost": 500
+        }
+      ]
+    },
+    {
+      "Category": "Geography",
+      "QuestionList": [
+        {
+          "QuestionTxt": "What is the name of the tallest mountain in the world?",
+          "Answer": "Mount Everest",
+          "Cost": 100
+        },
+        {
+          "QuestionTxt": "What are the names of the five oceans of the world?",
+          "Answer": "Atlantic, Pacific, Indian, Arctic, and the Antarctic",
+          "Cost": 200
+        },
+        {
+          "QuestionTxt": "What is the name of the longest river in Africa?",
+          "Answer": "The Nile River",
+          "Cost": 300
+        },
+        {
+          "QuestionTxt": "What U.S. state is home to no documented poisonous snakes?",
+          "Answer": "Alaska",
+          "Cost": 400
+        },
+        {
+          "QuestionTxt": "Where are the Spanish Steps located?",
+          "Answer": "Rome, Italy",
+          "Cost": 500
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="Jeopardy.Views.GameBoard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Jeopardy.Views"
+             xmlns:viewModels="clr-namespace:Jeopardy.ViewModels"
+             xmlns:customControls="clr-namespace:Jeopardy.CustomControls"
+             mc:Ignorable="d"
+             d:DataContext="d:DesignInstance viewModels:GameBoardViewModel"
+             d:Height="Auto" d:Width="Auto">
+
+    <!--<UserControl.DataContext>
+        <viewModels:GameBoardViewModel/>
+    </UserControl.DataContext>-->
+
+    <ItemsControl>
+        <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+                <StackPanel Height="Auto" Width="Auto" HorizontalAlignment="Left"/>
+            </ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
+
+        <ItemsControl Background="#0f47a8" ItemsSource="{Binding QuestionTypes}">
+            <ItemsControl.Template>
+                <ControlTemplate TargetType="ItemsControl">
+                    <Border BorderBrush="#FF000150" BorderThickness="2">
+                        <ItemsPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </ItemsControl.Template>
+            
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel HorizontalAlignment="Left" Width="Auto" Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <DockPanel Background="#0f47a8" Height="100" Width="210">
+                        <TextBlock FontWeight="Bold" FontSize="20" Foreground="White" TextWrapping="Wrap" TextAlignment="Center"
+                                   HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding}"/>
+                    </DockPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+        <ItemsControl Background="#FF000150" ItemsSource="{Binding Questions}">
+            <ItemsControl.Template>
+                <ControlTemplate TargetType="ItemsControl">
+                    <Border BorderBrush="#FF000150" BorderThickness="2">
+                        <ItemsPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </ItemsControl.Template>
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid VerticalAlignment="Top" HorizontalAlignment="Left"
+                                 Rows="{Binding Rows}" Columns="{Binding Columns}"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <DockPanel LastChildFill="False">
+                        <customControls:QuestionButton Command="{Binding QuestionSelectedCommand}" 
+                                                       WasPressed="{Binding WasPressed}" 
+                                                       QuestionCost="{Binding QuestionCost}"
+                                                       LastChosen="{Binding LastChosen}"/>
+                    </DockPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+      
+    </ItemsControl>
+
+</UserControl>

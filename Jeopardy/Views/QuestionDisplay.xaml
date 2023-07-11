@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="Jeopardy.Views.QuestionDisplay"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Jeopardy.Views"
+             xmlns:viewModels="clr-namespace:Jeopardy.ViewModels"
+             xmlns:converters="clr-namespace:Jeopardy.Converters"
+             mc:Ignorable="d" 
+             d:DataContext="d:DesignInstance viewModels:QuestionDisplayViewModel"
+             d:Height="Auto" d:Width="Auto">
+
+    <!--<UserControl.DataContext>
+        <viewModels:QuestionDisplayViewModel/>
+    </UserControl.DataContext>-->
+
+    <UserControl.Resources>
+        <converters:BoolToVisibilityConverter x:Key="boolToVisibilityConverter"/>
+    </UserControl.Resources>
+    <Border BorderThickness="2">
+        <StackPanel Height="{Binding Height}" Width="{Binding Width}">
+            <Border BorderBrush="#04142f" BorderThickness="1">
+                <Grid Background="#0f47a8" Height="{Binding HalfHeight}">
+                    <TextBlock Text="{Binding Path=Question.QuestionTxt}" Foreground="White" FontWeight="Bold" FontSize="20"
+                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                           TextAlignment="Center" TextWrapping="Wrap" Margin="25"/>
+                    <Button Command="{Binding ExitCommand}" BorderBrush="#04142f" BorderThickness="1"
+                    Background="#0a3175" Foreground="White" FontWeight="Bold" FontSize="25"
+                    Content="&#8617;" HorizontalAlignment="Right" VerticalAlignment="Top" 
+                    Width="75" Height="40" Visibility="{Binding ShowAnswer, Converter={StaticResource boolToVisibilityConverter}, ConverterParameter=False}"/>
+                </Grid>
+            </Border>
+            <Border BorderBrush="#04142f" BorderThickness="1">
+                <Grid Background="#0f47a8" Height="{Binding HalfHeight}">
+                    <TextBlock Text="{Binding Path=Question.Answer}" Foreground="White" FontWeight="Bold" FontSize="20"
+                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                           TextAlignment="Center"  TextWrapping="Wrap" Margin="25"
+                           Visibility="{Binding ShowAnswer, Converter={StaticResource boolToVisibilityConverter}, ConverterParameter=False}"/>
+                    <Button Command="{Binding ShowAnswerCommand}" BorderBrush="#04142f" BorderThickness="1" 
+                    Background="#0a3175" Foreground="White" FontWeight="Bold" FontSize="25"
+                    Content="Show Answer" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                    Width="200" Height="40" Visibility="{Binding ShowAnswer, Converter={StaticResource boolToVisibilityConverter}, ConverterParameter=True}"/>
+                </Grid>
+            </Border>
+        </StackPanel>
+    </Border>
+    
+</UserControl>
